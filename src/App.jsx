@@ -8,6 +8,7 @@ import Setstate from "./components/Setstate";
 
 import FunctionEvent from "./components/FunctionEvent";
 import ClassEvent from "./components/ClassEvent";
+import EventBind from "./components/EventBind";
 class App extends Component {
   render() {
     return (
@@ -26,9 +27,11 @@ class App extends Component {
 
         {/*  4.   <State /> */}
 
-        <Setstate />
-        <FunctionEvent />
-        <ClassEvent />
+        {/* <Setstate /> */}
+        {/* <FunctionEvent /> */}
+        {/* <ClassEvent /> */}
+
+        <EventBind />
       </div>
     );
   }
