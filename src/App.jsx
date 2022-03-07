@@ -10,6 +10,7 @@ import FunctionEvent from "./components/FunctionEvent";
 import ClassEvent from "./components/ClassEvent";
 import EventBind from "./components/EventBind";
 import ParentCompo from "./components/ParentCompo";
+import ListRender from "./components/ListRender";
 class App extends Component {
   render() {
     return (
@@ -33,7 +34,9 @@ class App extends Component {
         {/* <ClassEvent /> */}
 
         {/* <EventBind /> */}
-        <ParentCompo />
+        {/* <ParentCompo /> */}
+
+        <ListRender />
       </div>
     );
   }
