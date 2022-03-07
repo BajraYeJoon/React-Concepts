@@ -5,6 +5,9 @@ import Props from "./components/Props";
 import "./app.css";
 import State from "./components/State";
 import Setstate from "./components/Setstate";
+
+import FunctionEvent from "./components/FunctionEvent";
+import ClassEvent from "./components/ClassEvent";
 class App extends Component {
   render() {
     return (
@@ -24,6 +27,8 @@ class App extends Component {
         {/*  4.   <State /> */}
 
         <Setstate />
+        <FunctionEvent />
+        <ClassEvent />
       </div>
     );
   }

@@ -1,12 +1,14 @@
 import React from "react";
 
-const Props = (props) => {
+//destructuring 
+const Props = ({name, subName}) => {
+// const {name, subName} = props another way to destructuring in FC
   return (
     <div>
       <h1>
-        Hi {props.name} aka {props.subName}{" "}
+        Hi {name} aka {subName}{" "}
       </h1>
-      {props.children}
+      {/* {props.children} */}
     </div>
   );
 };
