@@ -11,6 +11,7 @@ import ClassEvent from "./components/ClassEvent";
 import EventBind from "./components/EventBind";
 import ParentCompo from "./components/ParentCompo";
 import ListRender from "./components/ListRender";
+import Form from "./components/Form";
 class App extends Component {
   render() {
     return (
@@ -36,7 +37,9 @@ class App extends Component {
         {/* <EventBind /> */}
         {/* <ParentCompo /> */}
 
-        <ListRender />
+        {/* <ListRender /> */}
+
+        <Form />
       </div>
     );
   }

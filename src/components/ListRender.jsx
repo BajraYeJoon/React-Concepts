@@ -19,7 +19,7 @@ function ListRender() {
       desc: "tweet",
     },
   ];
-  const siteList = sites.map((site) => <SiteList site={site}/>);
+  const siteList = sites.map((site) => <SiteList key={site.id} site={site} />);
   return <div>{siteList}</div>;
 }
 
