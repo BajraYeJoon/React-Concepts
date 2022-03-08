@@ -16,6 +16,8 @@ import LifeCycleA from "./components/LifeCycleA";
 import RegularParent from "./components/RegularParent";
 import Clicker from "./components/higherorder/Clicker";
 import Hover from "./components/higherorder/Hover";
+import LevelOne from "./components/context/LevelOne";
+import { UserProvider } from "./components/context/userContext";
 class App extends Component {
   render() {
     return (
@@ -49,9 +51,13 @@ class App extends Component {
 {/* 
         <RegularParent /> */}
 
-        <Clicker  name="Binaya"/>
-        <Hover />
+        {/* <Clicker  name="Binaya"/>
+        <Hover /> */}
        
+       {/* The provide is wrapped around the top of the nested component and value to pass down is given */}
+       <UserProvider value="Binaya">
+       <LevelOne /> </UserProvider>
+
       </div>
     );
   }                                
