@@ -21,7 +21,7 @@ class RegularParent extends Component {
         },2000)
     }
   render() {
-      console.log("Parent Comp...")
+      console.log("Parent")
     return (
       <div>RegularParent
         {/* <RegularChild name={this.state.name}/>

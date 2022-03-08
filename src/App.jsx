@@ -19,6 +19,7 @@ import Hover from "./components/higherorder/Hover";
 import LevelOne from "./components/context/LevelOne";
 import { UserProvider } from "./components/context/userContext";
 import Post from "./components/http/Post";
+import PostRequest from "./components/http/PostRequest";
 class App extends Component {
   render() {
     return (
@@ -59,7 +60,8 @@ class App extends Component {
        {/* <UserProvider value="Binaya">
        <LevelOne /> </UserProvider> */}
        
-       <Post />
+       {/* <Post /> */}
+       <PostRequest />
       </div>
     );
   }                                
