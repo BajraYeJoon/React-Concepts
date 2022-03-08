@@ -18,6 +18,7 @@ import Clicker from "./components/higherorder/Clicker";
 import Hover from "./components/higherorder/Hover";
 import LevelOne from "./components/context/LevelOne";
 import { UserProvider } from "./components/context/userContext";
+import Post from "./components/http/Post";
 class App extends Component {
   render() {
     return (
@@ -55,9 +56,10 @@ class App extends Component {
         <Hover /> */}
        
        {/* The provide is wrapped around the top of the nested component and value to pass down is given */}
-       <UserProvider value="Binaya">
-       <LevelOne /> </UserProvider>
-
+       {/* <UserProvider value="Binaya">
+       <LevelOne /> </UserProvider> */}
+       
+       <Post />
       </div>
     );
   }                                
