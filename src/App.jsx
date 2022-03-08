@@ -14,6 +14,8 @@ import ListRender from "./components/ListRender";
 import Form from "./components/Form";
 import LifeCycleA from "./components/LifeCycleA";
 import RegularParent from "./components/RegularParent";
+import Clicker from "./components/higherorder/Clicker";
+import Hover from "./components/higherorder/Hover";
 class App extends Component {
   render() {
     return (
@@ -44,11 +46,15 @@ class App extends Component {
         {/* <Form /> */}
 
         {/* <LifeCycleA /> */}
+{/* 
+        <RegularParent /> */}
 
-        <RegularParent />
+        <Clicker  name="Binaya"/>
+        <Hover />
+       
       </div>
     );
-  }
+  }                                
 }
 
 export default App;
