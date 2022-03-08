@@ -12,6 +12,7 @@ import EventBind from "./components/EventBind";
 import ParentCompo from "./components/ParentCompo";
 import ListRender from "./components/ListRender";
 import Form from "./components/Form";
+import LifeCycleA from "./components/LifeCycleA";
 class App extends Component {
   render() {
     return (
@@ -39,7 +40,9 @@ class App extends Component {
 
         {/* <ListRender /> */}
 
-        <Form />
+        {/* <Form /> */}
+
+        <LifeCycleA />
       </div>
     );
   }
