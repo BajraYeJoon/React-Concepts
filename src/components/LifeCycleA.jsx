@@ -16,9 +16,30 @@ class LifeCycleA extends Component {
         return null
 
     }
+     
 
     componentDidMount(){
       console.log("A mounted")
+    }
+
+    shouldComponentUpdate() {
+        console.log("A compo update")
+        return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log("A snapshot")
+        return null
+    }
+
+    componentDidUpdate(){
+        console.log("A updated")
+    }
+
+    namechange = () => {
+        this.setState({
+            name : "hie"
+        })
     }
  
     render() {
@@ -26,6 +47,7 @@ class LifeCycleA extends Component {
     return (
         
       <div><h1>LifeCycle A</h1>
+      <button onClick={this.namechange}>Change</button>
       <LifeCycleB />
 
       </div>
